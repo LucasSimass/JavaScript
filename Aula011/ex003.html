@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filtro</title>
+</head>
+<body>
+  Qual é seu pais? <input type="text" name="pais" id="pais">
+  <input type="button" value="Confirmar" onclick="confirmar()">
+  <div id="resultado"></div>
+  <div id="res2"></div>
+  <script>
+    function confirmar(){
+        var pais = window.document.getElementById('pais')
+        var resultado = window.document.getElementById('resultado')
+        var res2 = window.document.getElementById('res2')
+        if (pais.value =='brasil'){
+            resultado.innerHTML ='Você é brasileiro!'
+            res2.innerHTML = `Seu pais é o Brasil`
+
+        }else{
+            resultado.innerHTML ='Você é estrangeiro!'
+            res2.innerHTML=`Seu pais é: ${pais.value}`
+        }
+    }
+  </script>
+</body>
+</html>

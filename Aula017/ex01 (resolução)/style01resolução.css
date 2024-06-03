@@ -1,0 +1,37 @@
+body{
+    background-color: #202124;
+}
+header{
+    text-align: center;
+    background-color: #435283;
+    box-shadow: 5px 5px 10px;
+    margin: auto;
+    width: 200px;
+}
+section{
+    background-color: aliceblue;
+    box-shadow: 5px 5px 10px;
+    margin: auto;
+    width: 600px;
+    height: 1%;
+    border-radius: 10px;
+}
+div{
+    font-size: 30px;
+    margin-left: 10px;
+}
+input{
+    font-size: 18px;
+}
+input#confirmar{
+    font-size: 16px;
+}
+div#div{
+    text-align: left;
+    margin-left: 10px;
+}
+footer{
+    text-align: center;
+    color: #0a1841e5;
+    margin-top: 10px;
+}

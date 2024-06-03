@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos DOMt</title>
+    <style>
+        div#area{
+            font: normal 15pt Arial;
+            background-color: teal;
+            color: aliceblue;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id ="area" onclick="clicar()" onmouseenter="entrar()" onmouseout="sair()">
+        Clique aqui...
+    </div>
+    <script>
+        var a = window.document.getElementById('area')
+        function clicar(){
+            a.innerText = "Você clicou no botão!"
+            a.style.backgroundColor = 'red'
+        }
+        function entrar(){
+            a.style.backgroundColor= 'green'
+            a.innerText = "Clique em mim pf..."
+        }
+        function sair(){
+            a.style.backgroundColor = ' teal'
+            a.innerText = 'Clique aqui...'
+        }
+    </script>
+</body>
+</html>

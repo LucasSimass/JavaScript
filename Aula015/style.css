@@ -1,0 +1,42 @@
+body{
+    background-color: rgb(121, 15, 121);
+    color: black;
+    font-style: italic;
+    text-align: center;
+}
+header{
+    background-color: green;
+    box-shadow: 5px 5px;
+    width: 19em;
+    margin: auto;
+    text-align: center;
+}
+section{
+    color: black;
+    margin: auto;
+    background-color:white;
+    padding: 3px;
+    width: 19em;
+    text-align: center;
+    border-radius: 20px 20px 20px;
+    font-style: italic;
+    box-shadow: 10px 10px ;
+    font-size: 22pt;
+}
+
+footer{
+    height: 5em;
+    color: blueviolet;
+}
+img{
+    height: 9em;
+    border-radius: 5em 5em 5em;
+}
+input{
+    font-size: 17pt;
+}
+input#verificar{
+    height: 1.5em;
+    width: 6em;
+    font-size: 17pt;
+}

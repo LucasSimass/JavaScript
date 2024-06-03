@@ -1,0 +1,39 @@
+body{
+    background-color: rgb(21, 116, 100);
+    font-style: italic;
+}
+header{
+    text-align: center;
+    margin: auto;
+    background-color: blueviolet;
+    width: 200pt;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px;
+}
+section{
+    margin: auto;
+    background-color: aliceblue;
+    width: 510px;
+    font-size: 30px;
+    border-radius: 20px;
+    box-shadow: 10px 10px 10px;
+    height: 200px;
+    text-align: center;
+}
+div#resultado{
+    text-align: left;
+    margin-left: 5px;
+}
+  
+input#numero{
+    font-size: 16px;
+}
+select{
+    font-size: 20px;
+    width: 130px;
+}
+footer{
+    text-align: center;
+    margin-top: 10px;
+    color: rgb(97, 189, 158);
+}

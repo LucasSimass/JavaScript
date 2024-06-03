@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de multas</title>
+</head>
+<body>
+    <h1>Sistema de multas</h1>
+    Velocidade do carro:<input type="number" name="texto" id="texto">
+    km/h <input type="button" value="Verificar" id="confirmação">
+    <div id="velocidade"></div>
+    <div id="resultado"></div>
+    <div id="aviso"></div>
+    <script>
+        var confirmação = window.document.getElementById('confirmação')
+        confirmação.addEventListener('click',click)       
+    function click(){
+        var aviso = window.document.getElementById('aviso')
+        var resultado = window.document.getElementById('resultado')
+        var velocidade = window.document.getElementById('velocidade')
+        var texto = window.document.getElementById('texto')
+        var texton = Number(texto.value)
+        aviso.innerHTML = '<p>Use sempre cinto de segurança ao dirigir seu carro!</p>'
+        velocidade.innerHTML = `<p>Sua velocidade era de <strong>${texton}</strong> km/h</p>`
+        if (texton > 60){
+                resultado.innerHTML='<p>Você ultrapassou o limite maximo,multado!</p>'
+    }else{
+        resultado.innerHTML = '<p>Parabéns,você estava abaixo do limite maximo de velocidade</p>'
+    }
+    }
+
+    </script>
+</body>
+</html>
